@@ -1,0 +1,38 @@
+---
+format: 
+  revealjs:
+    slide-number: false
+    logo: images/cp_hex_logo.png
+    theme: style.scss
+    embed-resources: true
+editor: visual
+bibliography: references.bib
+---
+
+##  {background-image="images/puzzle-pieces.jpg" background-position="cover" aria-label="A pile of white puzzle pieces"}
+
+
+[**decodeR**]{style="font-size: 3em; color: #e58e1a;"}: [Gameful Activities for Introductory Programming]{style="font-size: 2em"}
+
+</br>
+</br>
+
+::: columns
+::: {.column width="15%"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="80%"}
+::: {style="font-size: 1.25em; color: #e58e1a;"}
+**Kelly Bodwin & Allison Theobold**
+:::
+:::
+:::
+
+# Outline
+
+## Gameful Learning [@hayward2021]
+
+## References
