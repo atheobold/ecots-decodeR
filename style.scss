@@ -5,16 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap');
 
 $font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
-$presentation-heading-color: #bf9000;
+$presentation-heading-color: #e58e1a;
 $presentation-title-slide-text-align: "left";
 $link-color: #75AADB;
-$code-block-font-size: 0.8em;
+$code-block-font-size: 0.75em;
 
 /*-- scss:rules --*/
 
 .reveal .custom-title {
   font-family: 'Delius Unicase', cursive;
-  color: #bf9000;
+  color: #e58e1a;
   font-size: 3em;
   position: absolute;
   left: 20px;
@@ -23,7 +23,7 @@ $code-block-font-size: 0.8em;
 
 .reveal .custom-subtitle {
   font-family: 'Delius Unicase', cursive;
-  color: #bf9000;
+  color: #e58e1a;
   font-size: 1.2em;
   position: absolute;
   left: 20px;
@@ -31,7 +31,7 @@ $code-block-font-size: 0.8em;
 }
 
 .reveal .custom-author {
-  color: #bf9000;
+  color: #e58e1a;
   position: absolute;
   text-align: right;
   font-size: 1.1em;

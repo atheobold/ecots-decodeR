@@ -11,11 +11,9 @@ bibliography: references.bib
 
 ##  {background-image="images/puzzle-pieces.jpg" background-position="cover" aria-label="A pile of white puzzle pieces"}
 
+[**decodeR**]{style="font-size: 3.5em; color: #e58e1a;"}: [Gameful Activities for Introductory Programming]{style="font-size: 2em"}
 
-[**decodeR**]{style="font-size: 3em; color: #e58e1a;"}: [Gameful Activities for Introductory Programming]{style="font-size: 2em"}
-
-</br>
-</br>
+</br> </br>
 
 ::: columns
 ::: {.column width="15%"}
@@ -25,14 +23,81 @@ bibliography: references.bib
 :::
 
 ::: {.column width="80%"}
-::: {style="font-size: 1.25em; color: #e58e1a;"}
+::: midi
 **Kelly Bodwin & Allison Theobold**
 :::
 :::
 :::
 
+:::
+
 # Outline
 
-## Gameful Learning [@hayward2021]
+# What is decodeR?
+
+## 
+
+::: columns
+::: {.column width="75%"}
+[Why puzzles?]{style="font-size: 2em; color: #e58e1a;"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="20%"}
+![](images/puzzle-piece.jpg){width="80%"}
+:::
+:::
+
+> Well designed games emphasize ***engagement, persistence, and resiliance*** in the face of setbacks. Games encourage players to ***act creatively, and collaboratively***, to learn new content and skills, and to develop expertise. [@gameful]
+
+## Self-Determination Theory
+
+:::{.small}
+> Humans are naturally interested in learning and internalizing the knowledge, customs, and values surrounding them. [@niemiec2009]
+:::
+
+:::{.incremental}
+-   This learning occurs most naturally in environments which support the core psychological needs: autonomy, competence, and relatedness [@deci2012]. 
+
+:::{.small}
+  + Learners have the ability to make meaningful choices about their environment.
+  + Learners feel skilled and that their skills are being developed by the presence of optimal challenges.
+  + Learners feel connected to other people. 
+:::
+:::
+
+:::{.note}
+When these psychological needs are met, learners experience greater intrinsic motivation, which can boost their creativity, attention, persistence, and satisfaction. 
+:::
+
+## Designing Gameful Activities
+
+:::{.small}
+> In video games, players learn simple skills in low-stakes contexts that are then gradually strung together in increasingly complex sequences and scenarios.  [@gameful]
+:::
+
+
+##  {background-color="#D4D4D4"}
+
+::: columns
+::: {.column width="40%"}
+::: larger
+Thank you!
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+![](hex-sticker/decodeR-hex.png){fig-alt="A hex sticker with a..."}
+
+::: small
+<https://github.com/kbodwin/decodeR>
+:::
+:::
+:::
 
 ## References
