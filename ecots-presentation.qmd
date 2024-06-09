@@ -11,7 +11,7 @@ bibliography: references.bib
 
 ##  {background-image="images/puzzle-pieces.jpg" background-position="cover" aria-label="A pile of white puzzle pieces"}
 
-[**decodeR**]{style="font-size: 3.5em; color: #e58e1a;"}: [Gameful Activities for Introductory Programming]{style="font-size: 2em"}
+[**decodeR**]{style="font-size: 3.5em; color: #e58e1a;"}[:]{style="font-size: 2.25em;"} [Gameful Activities for Introductory Programming]{style="font-size: 2.25em"}
 
 </br> </br>
 
@@ -29,9 +29,59 @@ bibliography: references.bib
 :::
 :::
 
-:::
 
 # Outline
+
+::: columns
+::: {.column width="30%"}
+::: {.fragment .fade-in-then-semi-out}
+
+[Gameful Learning]{style="font-size: 1.5em; color: #507c33;"} 
+
+(5-minutes)
+
+:::{.small}
+- What is "gameful" learning?
+
+- Why is it important for student learning?
+:::
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+::: {.fragment .fade-in-then-semi-out}
+
+[Puzzle Design]{style="font-size: 1.5em; color: #507c33;"} 
+
+(15-minutes)
+
+::: {.small}
+- How do these activities look?
+
+- How were they designed?
+:::
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+::: {.fragment}
+
+[Implementation]{style="font-size: 1.5em; color: #507c33;"} 
+
+(5-minutes)
+
+::: {.small}
+- How are these activities used in class?
+:::
+:::
+:::
+:::
 
 # What is decodeR?
 
@@ -50,33 +100,37 @@ bibliography: references.bib
 :::
 :::
 
-> Well designed games emphasize ***engagement, persistence, and resiliance*** in the face of setbacks. Games encourage players to ***act creatively, and collaboratively***, to learn new content and skills, and to develop expertise. [@gameful]
+> Well designed games emphasize ***engagement, persistence, and resiliance*** in the face of setbacks. Games encourage players to ***act creatively, and collaboratively***, to learn new content and skills, and to develop expertise [@gameful]. 
 
 ## Self-Determination Theory
 
-:::{.small}
-> Humans are naturally interested in learning and internalizing the knowledge, customs, and values surrounding them. [@niemiec2009]
-:::
-
-:::{.incremental}
--   This learning occurs most naturally in environments which support the core psychological needs: autonomy, competence, and relatedness [@deci2012]. 
-
-:::{.small}
-  + Learners have the ability to make meaningful choices about their environment.
-  + Learners feel skilled and that their skills are being developed by the presence of optimal challenges.
-  + Learners feel connected to other people. 
+::: small
+::: incremental
+-   Learning occurs most naturally in environments which support the core psychological needs: autonomy, competence, and relatedness [@deci2012].
+-   Where learners have the ability to:
+    * make meaningful choices about their environment
+    * feel skilled and that their skills are being developed by the presence of optimal challenges
+    * feel connected to others
 :::
 :::
 
-:::{.note}
-When these psychological needs are met, learners experience greater intrinsic motivation, which can boost their creativity, attention, persistence, and satisfaction. 
+:::{.fragment}
+::: small
+> When these psychological needs are met, learners experience greater intrinsic motivation, which can boost their creativity, attention, persistence, and satisfaction [@deci2012].
+
+:::
 :::
 
 ## Designing Gameful Activities
 
-:::{.small}
-> In video games, players learn simple skills in low-stakes contexts that are then gradually strung together in increasingly complex sequences and scenarios.  [@gameful]
+::: small
+> In video games, players learn simple skills in low-stakes contexts that are then gradually strung together in increasingly complex sequences and scenarios. [@gameful]
 :::
+
+## Kelly's slides
+
+## How are these activities used in class?
+
 
 
 ##  {background-color="#D4D4D4"}
@@ -92,7 +146,7 @@ Thank you!
 :::
 
 ::: {.column width="45%"}
-![](hex-sticker/decodeR-hex.png){fig-alt="A hex sticker with a..."}
+![](hex-sticker/decodeR-hex.png){fig-alt="A hex sticker with a ..."}
 
 ::: small
 <https://github.com/kbodwin/decodeR>
