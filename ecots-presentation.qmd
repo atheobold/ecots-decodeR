@@ -219,17 +219,19 @@ library(tidyverse)
   
   -> `colleges` dataset is nice and messy!
 
-* Chose an arbitrary college to be the answer.
+* Chose a friend's college to be the answer.
 
 * **Reverse-engineered** filter steps.
 
-* Tweaked to hit each of the "big 5" `dplyr` verbs.
+* **Tweaked** to hit each of the "big 5" `dplyr` verbs.
 
 ## Pros
 
 * With some work, easy enough to **change the answer**.
 
 * **Not** sensitive to re-running chunks (if done correctly)
+
+* Can use **real data** for follow-up analysis
 
 ## Cons:
 
@@ -285,7 +287,7 @@ message
 
 ## Creation Process
 
-* Needed text with **recurring character** to replace
+* Needed text with a **frequent character** to replace
 
 . . .
 
@@ -296,23 +298,25 @@ Verily this vichyssoise of verbiage veers most verbose, so let me simply add tha
 
 ## Creation Process
 
-* Needed text with **recurring character** to replace
+* Needed text with a **frequent character** to replace
   
   -> Famous "V" speech
 
-* Insert nonsense to **remove**
+* **Insert** nonsense to remove
 
 * Incorporate **white space** and **punctuation**
 
 * Incorporate **repeated patterns**  (`ughh` and `ughhhh` to be removed)
 
-* Reverse-order steps.
+* **Reverse-order** steps.
 
 ## Pros
 
 * Very clear **final answer**
 
 * Progress is **visible** along the way
+
+* Easy to make **more or less complex**.
 
 
 
@@ -437,15 +441,16 @@ image(M, col = gray((1:100)/100), asp = 1, axes = FALSE)
 * Lots of arbitrary arithmatic changes
 
 * Include *determinant* and *inverse* and *SVD*
-  -> had to make extra matrices
   
-* Reverse the order
+  -> had to make **extra matrices**
+  
+* **Reverse** the order
 
 ## Pros
 
 * Clear **right answer**
 
-* Image-based result is fun
+* Image-based result is **fun**
 
 * Forces **learning goal** of careful row/column treatment
 
