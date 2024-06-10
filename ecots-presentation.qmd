@@ -5,7 +5,6 @@ format:
     logo: images/cp_hex_logo.png
     theme: style.scss
     embed-resources: true
-    incremental: true
 editor: visual
 bibliography: references.bib
 ---
@@ -147,7 +146,6 @@ library(tidyverse)
 
 ## Ephelia's college: Clues
 
-
 ```
 1. This college is located in Region 1.
 ```
@@ -188,7 +186,6 @@ library(tidyverse)
 
 * `filter()` with two conditions
 
-
 ## Ephelia's college: Clues
 
 ```
@@ -215,7 +212,9 @@ library(tidyverse)
 
 ## Creation process
 
-* Wanted **data cleaning** as a **warm-up** 
+::: {.incremental}
+
+* Wanted **data cleaning** as a **warm-up**.
   
   -> `colleges` dataset is nice and messy!
 
@@ -225,25 +224,44 @@ library(tidyverse)
 
 * **Tweaked** to hit each of the "big 5" `dplyr` verbs.
 
-## Pros
+:::
 
+## 
+
+::: columns
+::: {.column width="40%"}
+[**Pros**]{.larger}
+
+::: {.incremental}
 * With some work, easy enough to **change the answer**.
 
-* **Not** sensitive to re-running chunks (if done correctly)
+* **Not** sensitive to re-running chunks (if done correctly).
 
-* Can use **real data** for follow-up analysis
+* Can use **real data** for follow-up analysis.
 
-## Cons:
+:::
+:::
 
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+::: {.fragment}
+[**Cons**]{.larger}
+
+::: {.incremental}
 * Hard to involve all verbs in a **meaningful, relevant** way.
 
-* Doesn't incorporate `pivot` or `groupby-summarize`
+* Doesn't incorporate `pivot` or `groupby-summarize`.
 
 * If **data cleaning** is not done correctly, this won't work.
 
 * Possible to arrive at **an answer** without it being the **correct answer**.
 
-
+:::
+:::
+:::
+:::
 
 # Example 2: Decode a message
 
@@ -255,7 +273,9 @@ Run the code below to load the scrambled message:
 
 ```{r}
 #| echo: true
-message <- read.csv("https://www.dropbox.com/s/lgpn3vmksk3ssdo/scrambled_message.txt?dl=1", stringsAsFactors = FALSE)$Word
+#| code-line-numbers: false
+message <- read_csv("https://www.dropbox.com/s/lgpn3vmksk3ssdo/scrambled_message.txt?dl=1") %>% 
+  pull(Word)
 
 message
 ```
@@ -287,7 +307,7 @@ message
 
 ## Creation Process
 
-* Needed text with a **frequent character** to replace
+* Needed text with a **frequent character** to replace.
 
 . . .
 
@@ -298,31 +318,35 @@ Verily this vichyssoise of verbiage veers most verbose, so let me simply add tha
 
 ## Creation Process
 
-* Needed text with a **frequent character** to replace
+* Needed text with a **frequent character** to replace.
   
   -> Famous "V" speech
 
-* **Insert** nonsense to remove
+::: {.incremental}
+* **Insert** nonsense to remove.
 
-* Incorporate **white space** and **punctuation**
+* Incorporate **white space** and **punctuation**.
 
-* Incorporate **repeated patterns**  (`ughh` and `ughhhh` to be removed)
+* Incorporate **repeated patterns**  (`ughh` and `ughhhh` to be removed).
 
 * **Reverse-order** steps.
 
+:::
+
 ## Pros
 
-* Very clear **final answer**
+::: {.incremental}
+* Very clear **final answer**.
 
-* Progress is **visible** along the way
+* Progress is **visible** along the way.
 
 * Easy to make **more or less complex**.
 
-
+:::
 
 ## Cons
 
-*  Can recognize answer **early** in process
+*  Can recognize answer **early** in process.
 
 . . .
 
@@ -336,12 +360,13 @@ message %>%
 
 ## Cons
 
-* Can recognize answer **early** in process
+* Can recognize answer **early** in process.
 
 * Challenges of **object types** and `stringr`: puzzle is *vector* not a *data frame*.
 
-* Very **hard-coded**; can't swap out for a different quote.
+. . .
 
+* Very **hard-coded**; can't swap out for a different quote.
 
 # Example 3: Matrix Algebra
 
@@ -353,6 +378,8 @@ Run the following code chunk to load up your matrix (M), and to generate some ra
 
 ```{r}
 #| echo: true
+#| cache: true
+#| code-line-numbers: false
 
 ### DO NOT CHANGE ANYTHING IN THIS CODE CHUNK!!!
 
@@ -382,20 +409,55 @@ H <- as.matrix(array(rnorm(n*p), c(n,p)))
 Run the following code chunk to load up your matrix (M), and to generate some random matrices and vectors that we will use along the way.
 ```
 
+::: {.small}
 ```{r}
 #| echo: true
+#| code-line-numbers: false
+
 M
 ```
-
+:::
 
 ## Final Chunk
 
 If we ran the final chunk now...
 
+::: columns
+::: {.column width="40%"}
 ```{r}
 #| echo: true
-image(M, col = gray((1:100)/100), asp = 1, axes = FALSE)
+#| eval: false
+#| code-line-numbers: false
+
+image(M, 
+      col = gray(
+        (1:100)/100
+        ), 
+      asp = 1, 
+      axes = FALSE
+      )
 ```
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+```{r}
+#| echo: false
+
+image(M, 
+      col = gray(
+        (1:100)/100
+        ), 
+      asp = 1, 
+      axes = FALSE
+      )
+```
+
+:::
+:::
 
 ## Clues
 
@@ -403,8 +465,10 @@ But following all the clues gives...
 
 ```{r}
 #| echo: true
+#| code-line-numbers: false
+
 M <- M %*% A
-M <- t(t(M)*x)
+M <- t(t(M) * x)
 Y <- diag(y)
 
 M <- solve(Y) %*% M 
@@ -414,72 +478,130 @@ M <- M + det
 evs <- eigen(B)
 M <- M * sum(evs$vectors[,3])
 
-M <- M*t(tcrossprod(x,y))
+M <- M * t(tcrossprod(x,y))
 svd <- svd(H)
 
-M <- M * (100*svd$u)
+M <- M * (100 * svd$u)
 tr <- sum(svd$d)
 
-M = M/tr
+M = M / tr
 ```
 
 ## Result
 
 ... and then we see:
 
+::: columns
+::: {.column width="40%"}
 ```{r}
 #| echo: true
-image(M, col = gray((1:100)/100), asp = 1, axes = FALSE)
+#| eval: false
+#| code-line-numbers: false
+
+image(M, 
+      col = gray(
+        (1:100)/100
+        ), 
+      asp = 1, 
+      axes = FALSE
+      )
 ```
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+```{r}
+#| echo: false
+
+image(M, 
+      col = gray(
+        (1:100)/100
+        ), 
+      asp = 1, 
+      axes = FALSE
+      )
+```
+
+:::
+:::
 
 ## Creation Process
 
-* Needed a **square matrix**
+::: {.incremental}
+* Needed a **square matrix**.
   
-  -> found a random square image online
+  -> Found a random square image online.
   
-* Lots of arbitrary arithmatic changes
+* Lots of arbitrary arithmatic changes.
 
-* Include *determinant* and *inverse* and *SVD*
+* Include *determinant* and *inverse* and *SVD*.
   
-  -> had to make **extra matrices**
-  
-* **Reverse** the order
+  -> Had to make **extra matrices**.
 
-## Pros
+* **Reverse** the order.
 
-* Clear **right answer**
+:::
 
-* Image-based result is **fun**
+## 
 
-* Forces **learning goal** of careful row/column treatment
+::: columns
+::: {.column width="40%"}
+[**Pros**]{.larger}
 
-## Cons
+::: {.incremental}
+* Clear **right answer**.
 
-* No **visible progress**
+* Image-based result is **fun**.
 
-* Can **skip steps** and arrive at correct image
+* Forces **learning goal** of careful row / column treatment.
+
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+::: {.fragment}
+[**Cons**]{.larger}
+
+::: {.incremental}
+* No **visible progress**.
+
+* Can **skip steps** and arrive at correct image.
 
 * Particularly difficult to make, because many matrix operations are **not reversible**.
+
+:::
+:::
+:::
+:::
+
 
 # Reflections and Advice
 
 ## Warm-ups
 
-> In video games, players learn simple skills in low-stakes contexts that are then gradually strung together in increasingly complex sequences and scenarios. [@gameful]
+> In video games, players learn simple skills in low-stakes contexts that are then gradually strung together in increasingly complex sequences and scenarios [@gameful].
 
 ## Warm-ups
 
 These could be...
 
+::: {.incremental}
 * ... **setup:** preparing data for the puzzle.
 
 * ... **mini-tasks:** trying things in bite-sized form before doing them in the puzzle.
 
-* ... **quickstart:** doing the first few steps of the puzzle together or with more guidance.
+* ... **quick start:** doing the first few steps of the puzzle together or with more guidance.
+
+:::
 
 ## Making your own puzzles
 
+::: {.incremental}
 1. Pick an answer that you find **fun**!
 
 2. Start with the answer, then **mess around with it**.
@@ -490,21 +612,26 @@ These could be...
 
 5. Make specific tweaks to include specific **learning goals**.
 
-6. Write **clear and specific** clues/steps.
+6. Write **clear and specific** clues / steps.
 
-7.  **Test, test, test**
+7.  **Test, test, test**.
+
+:::
 
 ## Cautionary tales
 
-* Small typos are a **disaster**
+::: {.incremental}
+* Small typos are a **disaster**.
 
-* The *code order in notebook* problem can be frustrating to new learners
+* The *code order in notebook* problem can be frustrating to new learners.
 
-* Ease of *auto-grading* also means ease of *cheating*
+* Ease of *auto-grading* also means ease of *cheating*.
 
 * These take **much longer** to make than an ordinary class activity.
 
 * Students won't get your hip references.
+
+:::
 
 ## Oh yes, we've got trouble...
 
@@ -531,25 +658,26 @@ Total Shipped Weight: 4532 lbs.
 ```
 
 
-## Right here in River City!
+## right here in River City!
 
 ![](https://64.media.tumblr.com/e08c677f9b20526cbc57be934acdbc34/9057d1d386105456-a2/s500x750/de0a687772531538e04a0d854a937929e8bb8871.gifv)
 
-
 ## Why it's worth it
 
+::: {.incremental}
 * Working **towards a goal** is better motivation than an arbitrary "try it" task.
 
-* Creates a **us vs puzzle** student teamwork mentality.
+* Creates a **us versus puzzle** student teamwork mentality.
 
 * The payoff of **decoding the puzzle** is SO satisfying.
 
 * Students will learn about your hip references.
 
+:::
+
 ## After decodeR:
 
 ![](https://y.yarn.co/20270e73-1e9d-4870-bc8d-3c16d5b521be_text.gif)
-
 
 # How are these activities used in class?
 
