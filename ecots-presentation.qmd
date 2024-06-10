@@ -5,6 +5,7 @@ format:
     logo: images/cp_hex_logo.png
     theme: style.scss
     embed-resources: true
+    incremental: true
 editor: visual
 bibliography: references.bib
 ---
@@ -256,10 +257,6 @@ message <- read.csv("https://www.dropbox.com/s/lgpn3vmksk3ssdo/scrambled_message
 message
 ```
 
-## Secret message and stringr
-
-> In this activity, a "word" is a set of characters with no white space.  That is, even though many of elements of the scrambled mess vector are nonsense, and some have punctuation, you can consider each element to be a "word".
-
 ## Warm-up exercises
 
 ```
@@ -458,6 +455,10 @@ image(M, col = gray((1:100)/100), asp = 1, axes = FALSE)
 * Particularly difficult to make, because many matrix operations are **not reversible**.
 
 # Reflections and Advice
+
+## Warm-ups
+
+> In video games, players learn simple skills in low-stakes contexts that are then gradually strung together in increasingly complex sequences and scenarios. [@gameful]
 
 ## Warm-ups
 
