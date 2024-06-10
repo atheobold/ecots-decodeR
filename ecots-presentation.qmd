@@ -9,26 +9,27 @@ editor: visual
 bibliography: references.bib
 ---
 
-##  {background-image="images/puzzle-pieces.jpg" background-position="cover" aria-label="A pile of white puzzle pieces"}
+##  {background-image="images/puzzle-pieces.jpg" background-position="cover" aria-label="A pile of white puzzle pieces."}
 
 [**decodeR**]{style="font-size: 3.5em; color: #e58e1a;"}[:]{style="font-size: 2.25em;"} [Gameful Activities for Introductory Programming]{style="font-size: 2.25em"}
 
-</br> </br>
+</br> 
 
 ::: columns
-::: {.column width="15%"}
+::: {.column width="16%"}
 :::
 
 ::: {.column width="5%"}
 :::
 
-::: {.column width="80%"}
+::: {.column width="79%"}
 ::: midi
 **Kelly Bodwin & Allison Theobold**
 :::
-:::
-:::
 
+Cal Poly, San Luis Obispo
+:::
+:::
 
 # Outline
 
@@ -72,7 +73,7 @@ bibliography: references.bib
 ::: {.column width="30%"}
 ::: {.fragment}
 
-[Implementation]{style="font-size: 1.5em; color: #507c33;"} 
+[Implementation]{style="font-size: 1.35em; color: #507c33;"} 
 
 (5-minutes)
 
@@ -85,6 +86,20 @@ bibliography: references.bib
 
 # What is decodeR?
 
+::: columns
+::: {.column width="65%"}
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="30%"}
+![](hex-sticker/decodeR-hex.png){fig-alt="A hex sticker with rearranged letters spelling `decodeR`, placed on top of a code breaking puzzle board."}
+:::
+:::
+
+
 ## 
 
 ::: columns
@@ -96,18 +111,18 @@ bibliography: references.bib
 :::
 
 ::: {.column width="20%"}
-![](images/puzzle-piece.jpg){width="80%"}
+![](images/puzzle-piece.jpg){fig-alt="One white puzzle piece."}
 :::
 :::
 
-> Well designed games emphasize ***engagement, persistence, and resiliance*** in the face of setbacks. Games encourage players to ***act creatively, and collaboratively***, to learn new content and skills, and to develop expertise [@gameful]. 
+> Well designed games emphasize ***engagement, persistence, and resilience*** in the face of setbacks. Games encourage players to ***act creatively, and collaboratively***, to learn new content and skills, and to develop expertise [@gameful]. 
 
 ## Self-Determination Theory
 
 ::: small
 ::: incremental
 -   Learning occurs most naturally in environments which support the core psychological needs: autonomy, competence, and relatedness [@deci2012].
--   Where learners have the ability to:
+-   Specifically, environments where learners have the ability to:
     * make meaningful choices about their environment
     * feel skilled and that their skills are being developed by the presence of optimal challenges
     * feel connected to others
@@ -121,17 +136,98 @@ bibliography: references.bib
 :::
 :::
 
-## Designing Gameful Activities
+# How do these activities look?
+
+## Kelly's slides
+
+Be sure to add this to a slide with the "warm-up" activities 
 
 ::: small
 > In video games, players learn simple skills in low-stakes contexts that are then gradually strung together in increasingly complex sequences and scenarios. [@gameful]
 :::
 
-## Kelly's slides
+# How were these activities designed?
 
-## How are these activities used in class?
+# How are these activities used in class?
 
+## Low-stakes Assessment of Weekly Skills
 
+::: columns
+::: {.column width="30%"}
+::: {.fragment .fade-in-then-semi-out}
+[**Pre-work**]{.midi}
+
+- Chapter reading
+- Concept quizzes
+- Small coding exercises 
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+::: {.fragment .fade-in-then-semi-out}
+[**Class Day 1**]{.midi}
+
+- Lecture / review [(45-60 minutes)]{style="font-size: 0.75em"}
+- [decodeR activity]{style="color: #507c33;"} [(60-75 minutes)]{style="font-size: 0.75em"}
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+::: {.fragment}
+[**Class Day 2**]{.midi}
+
+- Short lecture / review
+- Formal lab assignment covering the week's concepts / skills 
+:::
+:::
+:::
+
+## How do students complete the activity?
+
+::: columns
+::: {.column width="45%"}
+:::{.fragment .fade-in-then-semi-out}
+[**Kelly**]{.midi}
+
+:::{.small}
+- Completed independently
+- Can talk with classmates
+- Submit answer to Canvas
+:::
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+:::{.fragment .fade-in-then-semi-out}
+[**Allison**]{.midi}
+
+:::{.small}
+- Completed in pairs, using pair-programming collaborative protocols
+- Once pair has a solution, each student submits the answer to Canvas
+- Students share "solution" file
+:::
+:::
+:::
+:::
+
+. . .
+
+:::{.small}
+:::{.callout-tip}
+# Reviewing Solution Strategy
+
+We do not review the student's / group's `.qmd` file, but you could! 
+:::
+:::
 
 ##  {background-color="#D4D4D4"}
 
@@ -140,17 +236,19 @@ bibliography: references.bib
 ::: larger
 Thank you!
 :::
+
+</br>
+
+We welcome contributions of more gameful activities! 
+
+<https://github.com/kbodwin/decodeR>
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="45%"}
-![](hex-sticker/decodeR-hex.png){fig-alt="A hex sticker with a ..."}
-
-::: small
-<https://github.com/kbodwin/decodeR>
-:::
+![](hex-sticker/decodeR-hex.png){fig-alt="A hex sticker with rearranged letters spelling `decodeR`, placed on top of a code breaking puzzle board."}
 :::
 :::
 
