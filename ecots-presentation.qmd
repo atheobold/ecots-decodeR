@@ -216,6 +216,7 @@ library(tidyverse)
 ## Creation process
 
 * Wanted **data cleaning** as a **warm-up** 
+  
   -> `colleges` dataset is nice and messy!
 
 * Chose an arbitrary college to be the answer.
@@ -282,9 +283,9 @@ message
 9. Find the movie this quote is from.
 ```
 
-## Creation process
+## Creation Process
 
-* Needed text with **recurring chracter** to replace
+* Needed text with **recurring character** to replace
 
 . . .
 
@@ -295,7 +296,8 @@ Verily this vichyssoise of verbiage veers most verbose, so let me simply add tha
 
 ## Creation Process
 
-* Needed text with **recurring chracter** to replace
+* Needed text with **recurring character** to replace
+  
   -> Famous "V" speech
 
 * Insert nonsense to **remove**
@@ -429,6 +431,7 @@ image(M, col = gray((1:100)/100), asp = 1, axes = FALSE)
 ## Creation Process
 
 * Needed a **square matrix**
+  
   -> found a random square image online
   
 * Lots of arbitrary arithmatic changes

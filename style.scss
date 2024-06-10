@@ -12,6 +12,11 @@ $code-block-font-size: 0.75em;
 
 /*-- scss:rules --*/
 
+
+.reveal .slide b, strong {
+  color: #507c33;
+}
+
 .reveal .custom-title {
   font-family: 'Delius Unicase', cursive;
   color: #e58e1a;
