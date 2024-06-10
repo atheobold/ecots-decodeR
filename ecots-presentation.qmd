@@ -146,13 +146,18 @@ library(tidyverse)
 
 ## Ephelia's college: Clues
 
-> 1. This college is located in Region 1.
 
-* Simple `filter()`
+```
+1. This college is located in Region 1.
+```
+
+* simple `filter()`
 
 . . .
 
-> 2. This college's admission rate is in the first quartile for the region.
+```
+2. This college's admission rate is in the first quartile for the region.
+```
 
 * `summarize()` to find quartile
 
@@ -160,38 +165,50 @@ library(tidyverse)
 
 ## Ephelia's college: Clues
 
-> 3. This college charges the same for in- and out-of-state tuition.
+```
+3. This college charges the same for in- and out-of-state tuition.
+```
 
 * `filter()` with two variables
 
 . . .
 
-> 4. The average SAT score of this college is an odd number.
+```
+4. The average SAT score of this college is an odd number.
+```
 
 * `filter()` with math
 
 . . .
 
-> 5. This college is NOT in New Hampshire or in the city of Boston.
+```
+5. This college is NOT in New Hampshire or in the city of Boston.
+```
 
 * `filter()` with two conditions
 
 
 ## Ephelia's college: Clues
 
-> 6. More than 3,000 people apply to this college every year.  (Hint: Make a new variable to compute how many people apply.  Assume the size of an incoming class is 1/4 of the total undergraduate population, and remember that not everyone who *applies* is *admitted*.)
+```
+6. More than 3,000 people apply to this college every year.  (Hint: Make a new variable to compute how many people apply.  Assume the size of an incoming class is 1/4 of the total undergraduate population, and remember that not everyone who *applies* is *admitted*.)
+```
 
 * `mutate()` then `filter()` on new variable
 
 . . .
 
-> 7. Ephelia is not going to an Ivy League school.
+```
+7. Ephelia is not going to an Ivy League school.
+```
 
 * `filter()` with `%in%` and external research
 
 . . .
 
-> 8. Of the two options remaining at this step, Ephelia will attend the cheaper one.
+```
+8. Of the two options remaining at this step, Ephelia will attend the cheaper one.
+```
 
 * `min()`
 
@@ -228,7 +245,9 @@ library(tidyverse)
 
 ## Secret message and stringr
 
-> Run the code below to load the scrambled message:
+```
+Run the code below to load the scrambled message:
+```
 
 ```{r}
 #| echo: true
@@ -243,21 +262,18 @@ message
 
 ## Warm-up exercises
 
-::: small
-> In video games, players learn simple skills in low-stakes contexts that are then gradually strung together in increasingly complex sequences and scenarios. [@gameful]
-:::
-
-## Warm-up exercises
-
+```
 1. How many characters are in the scrambled message?
 2. How many of these characters are white space?
 3. How many words are in the scrambled message?
 4. Show all the punctuation marks in the scrambled message.
 5. Print out, in all capitals, the longest word in the scrambled message.
 6. Print out every piece of a word that starts with the letter "m" and ends with the letter "z" in the scrambled message.
+```
 
-## Clues{.smaller}
+## Clues
 
+```
 1. Remove any spaces before or after each word.
 2. No word should be longer than 16 characters. Drop all extra characters off the end of each word.
 3. Any time you see the word "ugh", with any number of h's, followed by a punctuation mark, delete this.
@@ -267,6 +283,7 @@ message
 7. Every word that starts with k, change that to a v.  *Hint: look out for capitalization!*
 8. Use `str_c` to recombine all your words into a message.
 9. Find the movie this quote is from.
+```
 
 ## Creation process
 
@@ -327,7 +344,9 @@ message %>%
 
 ## Setup
 
+```
 Run the following code chunk to load up your matrix (M), and to generate some random matrices and vectors that we will use along the way.
+```
 
 ```{r}
 #| echo: true
@@ -356,7 +375,9 @@ H <- as.matrix(array(rnorm(n*p), c(n,p)))
 
 ## Setup
 
+```
 Run the following code chunk to load up your matrix (M), and to generate some random matrices and vectors that we will use along the way.
+```
 
 ```{r}
 #| echo: true
@@ -478,7 +499,9 @@ These could be...
 
 ## Oh yes, we've got trouble...
 
-> You manage to intercept a shipping notice for delivery to Professor Hill.  It says the following:
+```
+You manage to intercept a shipping notice for delivery to Professor Hill.  It says the following:
+```
 
 
 ```
@@ -497,8 +520,6 @@ Items included:
 Total Shipped Weight: 4532 lbs.
 
 ```
-
-> This is your chance to catch Professor Hill in his lie!
 
 
 ## Right here in River City!
